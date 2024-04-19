@@ -1,0 +1,28 @@
+---
+import ThemeToggle from "../ThemeToggle.jsx";
+---
+
+<div
+    class="w-full max-h-20 flex flex-row justify-around items-center p-8 m-0 border-b-1 shadow-md"
+>
+    <div class="w-full flex justify-center">
+        <ThemeToggle client:only />
+        <button
+            class="ml-5 w-[10rem] text-center border-[3px] rounded-2xl border-primary text-primary dark:border-primaryDark dark:text-primaryDark"
+            >Descargar CV</button
+        >
+    </div>
+    <div class="w-full flex justify-center">
+        <a class="text-primary dark:text-primaryDark" href="">Sobre Mi</a>
+        <a class="text-primary dark:text-primaryDark" href="">Experiencia</a>
+        <a class="text-primary dark:text-primaryDark" href="">Proyectos</a>
+        <a class="text-primary dark:text-primaryDark" href="">Contacto</a>
+    </div>
+</div>
+
+<style>
+    a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+</style>

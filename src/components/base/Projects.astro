@@ -1,0 +1,24 @@
+---
+import CardProject from "../CardProject.astro";
+---
+
+<section class="min-h-[30rem] flex flex-col items-center justify-center">
+    <div class="">
+        <h1 class="font-extrabold text-5xl text-primary dark:text-primaryDark mb-2">
+            Proyectos
+        </h1>
+        <hr class="bg-primary h-2 w-20 dark:bg-primaryDark" />
+    </div> 
+
+    <div class="flex flex-row justify-around items-center">
+        <CardProject/>
+        <CardProject/>
+        <CardProject/>
+    </div>
+    <button
+        class="ml-5 w-[10rem] text-center border-[3px] rounded-2xl border-primary text-primary dark:border-primaryDark dark:text-primaryDark"
+        >Ver Todos</button
+    >
+</section> 
+
+

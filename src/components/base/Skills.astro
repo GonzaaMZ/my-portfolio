@@ -1,0 +1,61 @@
+---
+import CardSkill from "../CardSkill.astro";
+---
+
+<section class="min-h-[30rem] flex flex-col items-center justify-center mt-10">
+    <div>
+        <h1
+            class="font-extrabold text-5xl text-primary dark:text-primaryDark mb-2"
+        >
+            Habilidades
+        </h1>
+        <hr class="bg-primary h-2 w-20 dark:bg-primaryDark" />
+    </div>
+    <div class="grid grid-cols-4 grid-rows-3 gap-10 mt-10">
+        <div>
+            <CardSkill title="Java" src="/public/assets/java-logo-1.png" />
+        </div>
+        <div>
+            <CardSkill title="Spring Boot" src="/public/assets/spring.svg" />
+        </div>
+        <div>
+            <CardSkill
+                title="JavaScript"
+                src="/public/assets/JavaScript-logo.png"
+            />
+        </div>
+        <div>
+            <CardSkill title="NodeJs" src="/public/assets/nodejs-logo.png" />
+        </div>
+        <div>
+            <CardSkill title="Docker" src="/public/assets/docker-logo.png" />
+        </div>
+        <div>
+            <CardSkill title="ReactJs" src="/public/assets/react-logo.png" />
+        </div>
+        <div>
+            <CardSkill
+                title="Astro"
+                src="/public/assets/astro-icon-light-gradient.png"
+            />
+        </div>
+        <div>
+            <CardSkill title="SQL & NoSQL" src="/public/assets/bd-logo.png" />
+        </div>
+        <div>
+            <CardSkill
+                title="Testing Manual & Automatizado"
+                src="/public/assets/tester-logo.png"
+            />
+        </div>
+        <div>
+            <CardSkill title="NextJs" src="/public/assets/next-logo.png" />
+        </div>
+        <div>
+            <CardSkill title="Figma" src="/public/assets/figma-logo.png" />
+        </div>
+        <div>
+            <CardSkill title="TypeScript" src="/public/assets/ts-logo.png" />
+        </div>
+    </div>
+</section>

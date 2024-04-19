@@ -1,0 +1,20 @@
+---
+const {title, src} = Astro.props;
+---
+
+
+<div class="card flex flex-col justify-center items-center h-[15rem] w-[13rem]">
+    <img src={src} class="h-20 w-20" alt="">
+    <span class=" text-primaryDark font-bold mt-5 text-xl">{title}</span>
+
+</div>
+
+<style>
+    .card {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.75);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+</style>

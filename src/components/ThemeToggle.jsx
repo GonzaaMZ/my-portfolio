@@ -1,6 +1,4 @@
-
-import { useEffect, useState } from "preact/hooks";
-
+ import { useEffect, useState } from "preact/hooks"; 
 
 function IconDark() {
     return (
@@ -53,6 +51,6 @@ export default function ThemeToggle() {
 
 
     return (
-        <button onClick={handleClick}>{theme === 'light' ? <IconDark /> : <IconLight />}</button>
+        <button onClick={handleClick} className="hover:scale-110 transition duration-100">{theme === 'light' ? <IconDark /> : <IconLight />}</button>
     );
 } 

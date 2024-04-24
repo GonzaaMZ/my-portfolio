@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'; 
-import Header from '../components/base/Header.astro';
+import Header from '../components/base/Header';
 import Welcome from '../components/base/Welcome.astro';
 import AboutMe from '../components/base/AboutMe.astro';
 import Experience from '../components/base/Experience.astro';
@@ -10,7 +10,7 @@ import Footer from '../components/base/Footer.astro';
 ---
 
 <Layout title="My Portfolio">
-	<Header />
+	<Header client:only/>
 	<Welcome />
 	<AboutMe />
 	<Experience />
@@ -22,10 +22,7 @@ import Footer from '../components/base/Footer.astro';
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
+		padding: 1rem; 
 		font-size: 20px;
 		line-height: 1.6;
 	} 

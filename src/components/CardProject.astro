@@ -1,11 +1,13 @@
+---
+const {src, title, description, tags} = Astro.props
+---
 
-
-<div class="w-[20rem] h-[28rem] bg-primaryDark rounded-xl m-5 mt-10">
+<div class="w-[20rem] h-[28rem] bg-primaryDark rounded-xl m-5 mt-10 mobile:max-tablet:w-[14rem] mobile:max-tablet:h-[23rem] hover:opacity-75 duration-150">
     <div class="flex flex-row justify-center items-center"> 
         <!-- <img src="/public/assets/imagen-welcome.png" class="border shadow-lg rounded-lg p-3 w-[90%] h-[60%] justify-center" alt=""> -->
-        <img src="/public/assets/imagen-redimensionada.jpg" class="shadow-lg rounded-lg p-3 w-full h-full" alt="">
+        <img src={src} class="shadow-lg rounded-lg p-3 w-full h-full" alt="">
     </div>
-    <h1 class="m-3 font-bold text-primary text-xl">Title</h1>
-    <span class="m-3 text-primary">description</span>
-    <p class="m-3 text-primary italic">#react #tailwind #springboot</p>
+    <h1 class="m-3 font-bold text-primary text-xl mobile:max-desktop:text-lg">{title}</h1>
+    <p class="m-3 text-primary mobile:max-desktop:text-sm">{description}</p>
+    <p class="m-3 text-primary italic mobile:max-desktop:text-sm">{tags}</p>
 </div>

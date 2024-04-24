@@ -2,16 +2,16 @@
 import CardSkill from "../CardSkill.astro";
 ---
 
-<section class="min-h-[30rem] flex flex-col items-center justify-center mt-10">
+<section id="skills" class="min-h-[30rem] flex flex-col items-center justify-center mt-10 mobile:max-desktop:mt-20">
     <div>
         <h1
-            class="font-extrabold text-5xl text-primary dark:text-primaryDark mb-2"
+            class="font-extrabold text-5xl text-primary dark:text-primaryDark mb-2 mobile:max-tablet:text-4xl"
         >
             Habilidades
         </h1>
         <hr class="bg-primary h-2 w-20 dark:bg-primaryDark" />
     </div>
-    <div class="grid grid-cols-4 grid-rows-3 gap-10 mt-10">
+    <div class="grid grid-cols-4 grid-rows-3 gap-10 mt-10 mobile:max-tablet:grid-cols-1 tablet:max-desktop:grid-cols-2 mobile:max-tablet:grid-rows-12 tablet:max-desktop:grid-rows-6">
         <div>
             <CardSkill title="Java" src="/public/assets/java-logo-1.png" />
         </div>

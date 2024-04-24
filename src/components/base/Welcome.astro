@@ -1,14 +1,14 @@
  
- <main class="w-full h-screen mt-4 flex flex-row justify-around">
+ <main class="w-full h-screen mt-4 flex flex-row justify-around items-center mobile:max-tablet:w-[100%] mobile:max-tablet:flex-col mobile:max-tablet:mt-10 ">
     <div class="flex flex-col items-center justify-center">
-        <h1 class="text-4xl font-normal text-wrap mb-6 text-primary dark:text-primaryDark">Hola! Soy <b>Gonzalo Amaya</b> Desarrollador Full Stack</h1>
+        <h1 class="text-4xl font-normal text-wrap mb-6 text-primary dark:text-primaryDark mobile:max-tablet:text-center">Hola! Soy <b>Gonzalo Amaya</b> Desarrollador Full Stack</h1>
         <button
-        class="ml-5 w-[10rem] text-center border-[3px] rounded-2xl border-primary text-primary dark:border-primaryDark dark:text-primaryDark"
+        class="ml-5 w-[10rem] text-center border-[3px] rounded-2xl border-primary text-primary dark:border-primaryDark dark:text-primaryDark hover:shadow-xl hover:tracking-wider duration-200"
         >Leer Mas</button
     >
     </div>
-    <div class="flex items-center">
-        <img src="/public/assets/imagen-welcome.png" alt="img-welcome">
+    <div class="flex items-center mobile:max-tablet:hidden">
+        <img class="mobile:max-tablet:w-[22rem] mobile:max-tablet:h-[22rem]" src="/public/assets/imagen-welcome.png" alt="img-welcome">
     </div>
  </main>
 

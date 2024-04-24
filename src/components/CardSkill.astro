@@ -3,10 +3,9 @@ const {title, src} = Astro.props;
 ---
 
 
-<div class="card flex flex-col justify-center items-center h-[15rem] w-[13rem]">
-    <img src={src} class="h-20 w-20" alt="">
-    <span class=" text-primaryDark font-bold mt-5 text-xl">{title}</span>
-
+<div class="card flex flex-col justify-center items-center h-[15rem] w-[13rem] mobile:max-tablet:flex-row mobile:max-tablet:justify-evenly mobile:max-tablet:w-[15rem] mobile:max-tablet:h-[6rem] hover:scale-110 duration-200">
+    <img src={src} class="h-20 w-20 mobile:max-tablet:h-12 mobile:max-tablet:w-12" alt="">
+    <span class=" text-primaryDark font-bold mt-5 text-xl mobile:max-tablet:text-sm mobile:max-tablet:mt-0">{title}</span> 
 </div>
 
 <style>

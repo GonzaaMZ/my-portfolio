@@ -1,20 +1,56 @@
+---
+import {
+    IconEmailDark,
+    IconGithubDark,
+    IconLinkedinDark,
+    IconGithubLight,
+    IconEmailLight,
+    IconLinkedinLight,
+} from "../icons/Icons";
+---
 
-<footer class="h-[15rem] mt-10 w-full flex flex-row justify-around items-center">
-    <div>
-        <span class="text-primary dark:text-primaryDark text-lg">Developed by <b>Gonzalo Amaya</b></span>
+<footer
+    id="contact"
+    class="h-[15rem] mt-10 w-full flex flex-row justify-around items-center mobile:max-tablet:flex-col"
+>
+    <div class="mobile:max-tablet:hidden">
+        <span class="text-primary dark:text-primaryDark text-lg"
+            >Developed by <b>Gonzalo Amaya</b></span
+        >
     </div>
     <div class="flex flex-row justify-around">
-        <a href="">
-            <img class="h-10 w-10" src="/public/assets/github.png" alt="">
+        <a href="https://github.com/GonzaaMZ">
+            <!-- <img class="h-10 w-10" src="/public/assets/github.png" alt=""> -->
+            <IconGithubDark />
+            <IconGithubLight />
         </a>
-        <a href="">
-            <img class="h-10 w-10" src="/public/assets/social.png" alt="">
+        <a href="https://www.linkedin.com/in/gonzaloamaya/">
+            <!-- <img class="h-10 w-10" src="/public/assets/social.png" alt=""> -->
+            <IconLinkedinDark />
+            <IconLinkedinLight />
         </a>
-        <a href="">
-            <img class="h-10 w-10" src="/public/assets/correo-electronico-vacio.png" alt="">
-        </a>
+        <button onclick="myFunction()">
+            <!-- <img class="h-10 w-10" src="/public/assets/correo-electronico-vacio.png" alt=""> -->
+            <IconEmailDark />
+            <IconEmailLight />
+        </button>
     </div>
+
+    <div class="hidden mobile:max-tablet:block">
+        <span class="text-primary dark:text-primaryDark text-lg"
+            >Developed by <b>Gonzalo Amaya</b></span
+        >
+    </div>
+    
 </footer>
+
+<script is:inline>
+    function myFunction() { 
+        // Copy the text inside the text field
+        navigator.clipboard.writeText("gonzaloamaya1999@gmail.com");
+        
+    }
+</script>
 
 <style>
     footer {
@@ -25,6 +61,6 @@
     }
 
     a {
-        margin: 10px; 
+        margin: 10px;
     }
 </style>

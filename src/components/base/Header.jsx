@@ -17,7 +17,7 @@ export default function Header() {
                 <div class="w-full flex justify-center mobile:max-tablet:justify-start">
                     <ThemeToggle />
                     <a 
-                    href="/src/assets/download/CV-GONZALO-AMAYA-2024.pdf" 
+                    href="https://drive.google.com/file/d/1oY2FQCWrSotEOs61neMsoJkehnGNf0r3/view?usp=drive_link" 
                     download 
                     className="ml-5 w-[10rem] text-center border-[3px] rounded-2xl mobile:max-tablet:w-[7rem] border-primary text-primary dark:border-primaryDark dark:text-primaryDark hover:shadow-xl hover:tracking-wider duration-200"
                             >
